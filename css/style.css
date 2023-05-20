@@ -64,6 +64,8 @@ body, .body {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
+  background-color: #0f0f0f;
+  color: #fdfdfd;
 }
 
 .heading {
@@ -94,11 +96,23 @@ body, .body {
 }
 
 
-.article__link {
+a {
   font-family: "Montserrat";
   font-size: 1rem;
   font-weight: 400;
-  color: #14505c;
+  color: #83dbec;
+}
+a:link {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #83dbec;
+}
+a:visited {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #83dbec;
 }
 
 
@@ -134,16 +148,13 @@ body, .body {
 
 .picture {
   margin: 0.5rem 0;
-}
-
-.picture_logo {
-  box-shadow: 0 0 0.5rem #0f0f0f;
-  width: 100%;
-  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
 .logotype {
-  padding: 8px;
+  width: 100%;
 }
 
 /*picture и picture__logo и logotype*/
