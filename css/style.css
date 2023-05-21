@@ -58,7 +58,7 @@
 
 /*-----------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
 
 body, .body {
   font-family: "Montserrat";
@@ -72,6 +72,7 @@ body, .body {
   font-family: "Montserrat";
   font-size: 2rem;
   font-weight: 900;
+  grid-area: heading;
 }
 
 
@@ -119,7 +120,8 @@ a:visited {
 .article__heading {
   font-family: "Montserrat";
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 700;
+  margin: 2px 0;
 }
 
 
@@ -129,7 +131,7 @@ a:visited {
 
 
 .article {
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
 }
 
 
@@ -156,5 +158,39 @@ a:visited {
 .logotype {
   width: 100%;
 }
+
+.textvariant1 {
+  color: rgb(231, 215, 71);
+}
+
+.nav {
+  grid-area: nav;
+  text-align: end;
+}
+
+.header {
+  display: grid;
+  justify-content: left right;
+  grid-template: "heading nav";
+  align-items: center;
+}
+
+.navigation__links {
+  /* display: inline-block;
+  margin: 0 auto; */
+}
+
+.article_right {
+  display: grid;
+  justify-content: left right;
+  grid-template: "heading nav";
+  align-items: center;
+}
+
+.righttext {
+  display: inline-block;
+}
+
+/* textvariant1, nav, header, navigation__links, названия страниц */
 
 /*picture и picture__logo и logotype*/
