@@ -80,6 +80,19 @@ body, .body {
   font-family: "Montserrat";
   font-size: 1rem;
   font-weight: 300;
+  color: #0f0f0f;
+}
+.nav__link:link {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 300;
+  color:#0f0f0f;
+}
+.nav__link:visited {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 300;
+  color:#0f0f0f;
 }
 
 
@@ -126,6 +139,10 @@ a:visited {
 
 
 .article__list {
+  margin: 0 0 1rem 1rem;
+}
+
+.article__list:last-child {
   margin: 0 0 0 1rem;
 }
 
@@ -139,13 +156,14 @@ a:visited {
   margin: 0;
 }
 
-.article > .article__list {
+/* .article > .article__list {
   margin: 0;
-}
+} */
 
 .container {
   width: 1080px;
   margin: 0 auto;
+  position: relative;
 }
 
 .picture {
@@ -173,6 +191,11 @@ a:visited {
   justify-content: left right;
   grid-template: "heading nav";
   align-items: center;
+  background-color: #fdfdfd;
+  color: #0f0f0f;
+  padding: 1rem;
+  position: sticky;
+  top: 0px;
 }
 
 .navigation__links {
@@ -190,6 +213,7 @@ a:visited {
 .righttext {
   display: inline-block;
 }
+
 
 /* textvariant1, nav, header, navigation__links, названия страниц */
 
