@@ -220,6 +220,20 @@ a:visited {
   display: inline-block;
 }
 
+.button {
+  background: #84df84;
+  padding: 0.5rem;
+}
+
+.button:hover {
+  background-color: #83dbec;
+  transition: all 0.2s;
+}
+
+.button > .link {
+  color: #111010;
+}
+
 /* 1080 */
 @media (max-width: 1080px) {
   .container {
