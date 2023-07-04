@@ -108,6 +108,12 @@ body, .body {
   font-weight: 400;
 }
 
+.footer__paragraph {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 
 .article__element {
   font-family: "Montserrat";
@@ -143,6 +149,13 @@ a:visited {
   margin: 2px 0;
 }
 
+.footer__heading {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
 
 .article__list {
   margin: 0 0 1rem 1rem;
@@ -154,9 +167,12 @@ a:visited {
 
 
 .article {
-  margin: 0.8rem 0;
+  margin: 0 0 1rem 0;
 }
 
+.article:first-child {
+  margin: 0 0 1rem 0;
+}
 
 .article:last-child {
   margin: 0;
@@ -170,6 +186,9 @@ a:visited {
   width: 1080px;
   margin: 0 auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: "header header" "content footer";
 }
 
 .picture {
@@ -192,7 +211,16 @@ a:visited {
   text-align: end;
 }
 
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 .header {
+  grid-area: header;
   display: grid;
   justify-content: left right;
   grid-template: "heading nav";
@@ -221,17 +249,68 @@ a:visited {
 }
 
 .button {
-  background: #84df85;
+  background: rgb(231, 215, 71);
   padding: 0.5rem;
 }
 
 .button:hover {
-  background-color: #83dbec;
+  background-color: rgb(241, 225, 110);
   transition: all 0.2s;
 }
 
 .button > .link {
   color: #111010;
+}
+
+
+
+.body__inner {
+  position: relative;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.92);
+}
+
+#popup_info {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.92);
+}
+
+#popup_info:target {
+  display: block;
+}
+
+#popup:target {
+  display: block;
+}
+
+.popup__title {
+  font: 2rem "Montserrat ExtraBold";
+}
+
+.popup__inner {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  transform: translateY(-50%);
+}
+
+#exit {
+  color: #ee6565;
 }
 
 /* 1080 */

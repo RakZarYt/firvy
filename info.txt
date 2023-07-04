@@ -1,4 +1,29 @@
-* изменён стиль текста
+<nav class="nav">
+    <a href="" class="nav__link">divcook</a>
+    <a href="" class="nav__link">micromc</a>
+    <a href="" class="nav__link">aloretoolsmod</a>
+    <a href="" class="nav__link">bloodMehanic</a>
+    <a href="" class="nav__link">главная</a>
+    <a href="" class="nav__link">каталог</a>
+
+    <a href="divcook.html" class="nav__link">divcook</a>
+    <a href="perfectly.html" class="nav__link">micromc</a>
+    <a href="AloreToolsMod.html" class="nav__link">aloretoolsmod</a>
+    <a href="bloodmehanic.html" class="nav__link">bloodMehanic</a>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 body - тело страницы
