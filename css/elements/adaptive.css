@@ -1,0 +1,13 @@
+/* 1080 */
+@media (max-width: 1080px) {
+    .container {
+      width: 720px;
+    }
+  }
+  
+  /* 720 */
+  @media (max-width: 720px) {
+    .container {
+      width: 360px;
+    }
+  }
