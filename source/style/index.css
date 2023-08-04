@@ -1,0 +1,138 @@
+@import url("clear.css");
+
+/* font-family: 'IBM Plex Mono', monospace; */
+/* 700 600 400 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+* {
+    font: 16px "IBM Plex Mono", monospace;;
+}
+
+
+
+/*******************************************************/
+/* Макси-контейнеры */
+.body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+}
+
+/******************************************************/
+/*шапка*/
+.header {
+    background-color: #141414;
+    padding: 1rem;
+}
+.header__title {
+    font: 2rem "IBM Plex Mono";
+    color: aliceblue;
+    font-weight: 700;
+}
+.header__subtitle {
+    font: 1rem "IBM Plex Mono";
+    color: aliceblue;
+    font-weight: 400;
+}
+
+/*****************************************************/
+/* контент */
+.content {
+    display: grid;
+    grid-template-columns: 4% 14% 82%;
+    grid-template-areas: "nav aside section";
+    min-height: 100%;
+}
+.aside {
+    grid-area: aside;
+    background-color: #191919;
+    padding: 1rem;
+    height: 100%;
+    text-align: center;
+}
+.nav {
+    grid-area: nav;
+    background-color: #161616;
+}
+
+/***************************************************/
+/* основной-контент */
+.section {
+    grid-area: section;
+    background-color: #212121;
+    padding: 1rem;
+    height: 100%;
+}
+
+
+/**************************************************/
+/* нижняя часть страницы */
+.footer {
+    background-color: #141414;
+    padding: 1rem;
+}
+.footer__title {
+    font: 1.6rem "IBM Plex Mono";
+    color: aliceblue;
+    font-weight: 400;
+}
+
+/**************************************************/
+/* элементы */
+.heading {
+    font: 1.8rem "IBM Plex Mono";
+    color: aliceblue;
+    font-weight: 600;
+}
+.text {
+    font: 1rem "IBM Plex Mono";
+    color: aliceblue;
+    font-weight: 400;
+    text-align: justify;
+}
+.span {
+    font: 1rem "IBM Plex Mono";
+    font-weight: 400;
+    color: #e7d749;
+}
+.picture {
+    width: 100%;
+    display: block;
+    margin: 0.75rem 0;
+}
+.picture-with-text {
+    width: 36rem;
+    box-shadow: 0px 0px 12px #161616;
+    border-radius: 0.4rem;
+}
+.picture-no-margin {
+    margin: 0;
+}
+.multi-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0.75rem 0;
+    grid-gap: 1rem;
+}
+.multi-element {
+}
+.link {
+    color: #7eecda;
+}
+
+/*************************************************/
+/* резкие изменения */
+.aside > .heading {
+    margin: 0.5rem 0 1rem 0;
+    line-height: 1;
+}
+
+.nav__logo {
+    width: 100%
+}
+
+/*************************************************/
+/* адаптивность */
