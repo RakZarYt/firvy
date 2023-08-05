@@ -152,6 +152,9 @@
 .pupup__text {
     font: 1rem "IBM Plex Mono";
 }
+.picture-recipe {
+    width: auto;
+}
 
 /*************************************************/
 /* резкие изменения */
