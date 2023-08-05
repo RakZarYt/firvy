@@ -66,7 +66,13 @@
     padding: 1rem;
     height: 100%;
 }
-
+.popup {
+    display: none;
+    background-color: aliceblue;
+    color:#141414;
+    margin: 0 0 0.25rem 0;
+    padding: 0.5rem;
+}
 
 /**************************************************/
 /* нижняя часть страницы */
@@ -92,6 +98,10 @@
     color: aliceblue;
     font-weight: 400;
     text-align: justify;
+    margin: 0 0 0.75rem 0;
+}
+.text:last-child {
+    margin: 0;
 }
 .span {
     font: 1rem "IBM Plex Mono";
@@ -105,6 +115,7 @@
 }
 .picture-with-text {
     width: 36rem;
+    display: inline-block;
     box-shadow: 0px 0px 12px #161616;
     border-radius: 0.4rem;
 }
@@ -122,6 +133,25 @@
 .link {
     color: #7eecda;
 }
+.list {
+    margin-left: 1.1rem;
+    color: aliceblue;
+}
+.list__element {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.button {
+    padding: 0.25rem;
+    box-shadow: 0px 0px 10px #141414;
+    margin: 0 0 0.25rem 0;
+}
+.popup__title {
+    font: 1.5rem "IBM Plex Mono";
+}
+.pupup__text {
+    font: 1rem "IBM Plex Mono";
+}
 
 /*************************************************/
 /* резкие изменения */
@@ -132,6 +162,9 @@
 
 .nav__logo {
     width: 100%
+}
+.text_left {
+    text-align: left;
 }
 
 /*************************************************/
