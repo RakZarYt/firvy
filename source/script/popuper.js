@@ -1,4 +1,4 @@
-// popuper
+// popuper 0.2
 // Находим попапы
 let popups = document.querySelectorAll('.popup'); // все попапы
 // открывающие элементы (*1)
@@ -29,29 +29,37 @@ let popupOpenVersion3 = document.querySelector('#popup-open-version3');
 //     }
 // }
 
-popupOpenVersion1.onclick = function (event) {
-    let popupVersion1 = document.querySelector('#popup_version1'); 
-    if (popupVersion1.style.display === 'block') {
-        popupVersion1.style.display = 'none';
-    } else {
-        popupVersion1.style.display = 'block';
+if (popupOpenVersion1) {
+    popupOpenVersion1.onclick = function (event) {
+        let popupVersion1 = document.querySelector('#popup_version1'); 
+        if (popupVersion1.style.display === 'block') {
+            popupVersion1.style.display = 'none';
+        } else {
+            popupVersion1.style.display = 'block';
+        }
     }
-}
+};
 
-popupOpenVersion2.onclick = function (event) {
-    let popupVersion1 = document.querySelector('#popup_version2'); 
-    if (popupVersion1.style.display === 'block') {
-        popupVersion1.style.display = 'none';
-    } else {
-        popupVersion1.style.display = 'block';
+if (popupOpenVersion2) {
+    popupOpenVersion2.onclick = function (event) {
+        let popupVersion1 = document.querySelector('#popup_version2'); 
+        if (popupVersion1.style.display === 'block') {
+            popupVersion1.style.display = 'none';
+        } else {
+            popupVersion1.style.display = 'block';
+        }
     }
-}
+};
 
-popupOpenVersion3.onclick = function (event) {
-    let popupVersion1 = document.querySelector('#popup_version3'); 
-    if (popupVersion1.style.display === 'block') {
-        popupVersion1.style.display = 'none';
-    } else {
-        popupVersion1.style.display = 'block';
+if (popupOpenVersion3) {
+    popupOpenVersion3.onclick = function (event) {
+        let popupVersion1 = document.querySelector('#popup_version3'); 
+        if (popupVersion1.style.display === 'block') {
+            popupVersion1.style.display = 'none';
+        } else {
+            popupVersion1.style.display = 'block';
+        }
     }
-}
+};
+
+// новая версия popuper 0.2, удаленны упоминания блога :(, добавлены классы для nav(изменена структура)
